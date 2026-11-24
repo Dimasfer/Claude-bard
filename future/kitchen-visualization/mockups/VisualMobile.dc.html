@@ -29,7 +29,10 @@ body{margin:0}
 <section style="padding: 22px 16px 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px;">
 <span style="font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #5A5F5A;">Визуализация по фото · бесплатно</span>
 <h1 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 32px; line-height: 1.08; letter-spacing: -0.02em;">Примерьте свою кухню до замера и узнайте стоимость</h1>
-<p style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px; line-height: 1.4; color: {{ accent }};">Пришлите фото помещения — покажем кухню в 3 вариантах: эконом, стандарт, премиум</p>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<p style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px; line-height: 1.4; color: {{ accent }};">Загрузите фото помещения — покажем кухню в 3 вариантах: эконом, стандарт, премиум</p>
+<p style="margin: 0; font-size: 15px; line-height: 1.45;">Нет фото — нарисуем по вашим ответам.</p>
+</div>
 
 <div style="background: #FFFFFF; border: 1px solid #E2DDD3; border-radius: 20px; padding: 12px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px;">
 <div style="position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
@@ -50,25 +53,25 @@ body{margin:0}
 </div>
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 0 4px;">
 <div style="display: flex; flex-direction: column; gap: 2px; min-width: 0;"><span style="font-weight: 700; font-size: 16px;">{{ vName }}</span><span style="font-size: 13px; color: #5A5F5A;">{{ vMat }}</span></div>
-<span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 17px; white-space: nowrap;">от [цена] ₸</span>
+<span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 17px; white-space: nowrap;">[от–до] ₸</span>
 </div>
 </div>
 
-<a href="#quiz" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 16px; border-radius: 14px; background: {{ accent }}; color: #FFFFFF; text-decoration: none; font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px; box-sizing: border-box;"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19 L5.4 15.1 C4.5 13.8 4 12.3 4 10.8 C4 6.6 7.6 3.5 12 3.5 C16.4 3.5 20 6.6 20 10.8 C20 15 16.4 18.1 12 18.1 C10.6 18.1 9.3 17.8 8.1 17.3 Z"></path></svg>Отправить фото в WhatsApp</a>
-<a href="#quiz" style="display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 16px; border-radius: 14px; border: 1.5px solid #CFC9BD; background: #FFFFFF; color: #18201C; text-decoration: none; font-weight: 600; font-size: 16px; box-sizing: border-box;"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8 H7.5 L9 6 H15 L16.5 8 H20 V18 H4 Z"></path><circle cx="12" cy="13" r="3.2"></circle></svg>Загрузить на сайте</a>
+<a href="#quiz" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 58px; padding: 0 16px; border-radius: 14px; background: {{ accent }}; color: #FFFFFF; text-decoration: none; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px; box-sizing: border-box;">Примерить кухню<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><path d="M13 6 L19 12 L13 18"></path></svg></a>
 <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 16px; font-size: 14px; font-weight: 600;">
 <li style="display: inline-flex; align-items: center; gap: 5px;"><span style="color: {{ accent }}; display: flex;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 L10 17.5 L19 7.5"></path></svg></span>Бесплатно</li>
-<li style="display: inline-flex; align-items: center; gap: 5px;"><span style="color: {{ accent }}; display: flex;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 L10 17.5 L19 7.5"></path></svg></span>Ответ за [N] часов</li>
+<li style="display: inline-flex; align-items: center; gap: 5px;"><span style="color: {{ accent }}; display: flex;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 L10 17.5 L19 7.5"></path></svg></span>Результат сразу</li>
 <li style="display: inline-flex; align-items: center; gap: 5px;"><span style="color: {{ accent }}; display: flex;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 L10 17.5 L19 7.5"></path></svg></span>Без обязательств</li>
 </ul>
+<a href="#quiz" style="display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; color: #18201C; font-weight: 600; font-size: 15px; text-decoration: none;"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19 L5.4 15.1 C4.5 13.8 4 12.3 4 10.8 C4 6.6 7.6 3.5 12 3.5 C16.4 3.5 20 6.6 20 10.8 C20 15 16.4 18.1 12 18.1 C10.6 18.1 9.3 17.8 8.1 17.3 Z"></path></svg>Есть вопросы? Напишите в WhatsApp</a>
 <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #5A5F5A; text-align: center;">Это визуализация идеи. Точный проект и цену фиксируем в договоре после бесплатного замера.</p>
 </section>
 
 <section style="padding: 20px 16px 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 14px;">
 <h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px;">Как это работает</h2>
-<div style="display: flex; align-items: flex-start; gap: 12px;"><span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 999px; background: {{ accent }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px;">1</span><div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Сфотографируйте помещение</span><span style="font-size: 14px; line-height: 1.45; color: #5A5F5A;">Подойдёт и черновая отделка</span></div></div>
-<div style="display: flex; align-items: flex-start; gap: 12px;"><span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 999px; background: {{ accent }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px;">2</span><div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Получите 3 варианта с ценой</span><span style="font-size: 14px; line-height: 1.45; color: #5A5F5A;">Эконом, стандарт и премиум — за [N] часов</span></div></div>
-<div style="display: flex; align-items: flex-start; gap: 12px;"><span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 999px; background: {{ accent }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px;">3</span><div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Зафиксируйте цену в договоре</span><span style="font-size: 14px; line-height: 1.45; color: #5A5F5A;">После бесплатного замера</span></div></div>
+<div style="display: flex; align-items: flex-start; gap: 12px;"><span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 999px; background: {{ accent }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px;">1</span><div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Загрузите фото или ответьте на вопросы</span><span style="font-size: 14px; line-height: 1.45; color: #5A5F5A;">Подойдёт и черновая отделка</span></div></div>
+<div style="display: flex; align-items: flex-start; gap: 12px;"><span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 999px; background: {{ accent }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px;">2</span><div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Сразу получите 3 варианта с ценой</span><span style="font-size: 14px; line-height: 1.45; color: #5A5F5A;">На экране, копия — в мессенджер</span></div></div>
+<div style="display: flex; align-items: flex-start; gap: 12px;"><span style="flex: 0 0 30px; width: 30px; height: 30px; border-radius: 999px; background: {{ accent }}; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-family: Manrope, sans-serif; font-weight: 800; font-size: 15px;">3</span><div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Зафиксируйте цену на замере</span><span style="font-size: 14px; line-height: 1.45; color: #5A5F5A;">Замер бесплатный, смета — в договоре</span></div></div>
 </section>
 
 <section style="padding: 20px 16px 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px;">
@@ -84,19 +87,21 @@ body{margin:0}
 
 <section id="quiz" style="padding: 20px 16px 24px; box-sizing: border-box;">
 <div style="background: #FFFFFF; border: 1px solid #E2DDD3; border-radius: 20px; padding: 18px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px;">
+<sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 10px;">
 <div style="display: flex; flex-direction: column; gap: 4px;">
 <h2 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px; line-height: 1.2;">Примерьте кухню в 3 вариантах</h2>
-<sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}"><span style="font-size: 14px; color: #5A5F5A;">Шаг {{ stepNum }} из 5</span></sc-if>
+<span style="font-size: 14px; color: #5A5F5A;">Шаг {{ stepNum }} из 5</span>
 </div>
-<sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}">
 <div style="height: 6px; border-radius: 999px; background: #ECE8E0; overflow: hidden;"><div style="height: 100%; width: {{ progressPct }}%; background: {{ accent }}; border-radius: 999px;"></div></div>
+</div>
 </sc-if>
 
 <sc-if value="{{ s1 }}" hint-placeholder-val="{{ true }}">
 <div style="display: flex; flex-direction: column; gap: 12px;">
-<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Пришлите фото помещения</h3>
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Загрузите фото помещения</h3>
 <button type="button" onClick="{{ upload }}" style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-height: 150px; padding: 16px; box-sizing: border-box; border-radius: 14px; border: 2px dashed {{ accent }}; background: {{ accentTint }}; color: #18201C; font-family: 'Golos Text', sans-serif; cursor: pointer;"><span style="color: {{ accent }}; display: flex;"><svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8 H7.5 L9 6 H15 L16.5 8 H20 V18 H4 Z"></path><circle cx="12" cy="13" r="3.2"></circle></svg></span><span style="font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px;">Сделать или выбрать фото</span><span style="font-size: 13px; color: #5A5F5A;">Можно несколько снимков</span></button>
-<button type="button" onClick="{{ skip }}" style="align-self: center; min-height: 44px; padding: 0 4px; border: 0; background: transparent; color: #5A5F5A; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer;">Нет фото — пропустить</button>
+<button type="button" onClick="{{ skip }}" style="align-self: center; min-height: 44px; padding: 0 4px; border: 0; background: transparent; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer;">Нет фото — нарисуем по ответам</button>
 </div>
 </sc-if>
 
@@ -120,6 +125,20 @@ body{margin:0}
 
 <sc-if value="{{ s3 }}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 12px;">
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Примерная длина гарнитура?</h3>
+<p style="margin: 0; font-size: 14px; color: #5A5F5A;">По ней посчитаем стоимость</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<sc-for list="{{ lengths }}" as="opt" hint-placeholder-count="5">
+<button type="button" onClick="{{ opt.pick }}" style="min-height: 50px; padding: 8px 14px; box-sizing: border-box; border-radius: 12px; border: 2px solid {{ opt.ring }}; background: {{ opt.bg }}; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 16px; font-weight: 500; text-align: left; cursor: pointer;">{{ opt.label }}</button>
+</sc-for>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ s4 }}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 12px;">
 <h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Какой стиль ближе?</h3>
 <div style="display: flex; flex-direction: column; gap: 8px;">
 <sc-for list="{{ styles }}" as="opt" hint-placeholder-count="5">
@@ -129,7 +148,7 @@ body{margin:0}
 </div>
 </sc-if>
 
-<sc-if value="{{ s4 }}" hint-placeholder-val="{{ false }}">
+<sc-if value="{{ s5 }}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-direction: column; gap: 12px;">
 <h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Когда нужна кухня?</h3>
 <div style="display: flex; flex-direction: column; gap: 8px;">
@@ -140,9 +159,42 @@ body{margin:0}
 </div>
 </sc-if>
 
-<sc-if value="{{ s5 }}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; gap: 12px;">
-<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Куда прислать 3 варианта?</h3>
+<sc-if value="{{ canBack }}" hint-placeholder-val="{{ false }}">
+<button type="button" onClick="{{ back }}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: 0; background: transparent; color: #5A5F5A; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer;">← Назад</button>
+</sc-if>
+
+<sc-if value="{{ gen }}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 32px 0; text-align: center;">
+<span style="color: {{ accent }}; display: flex;"><svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke-opacity="0.2"></circle><path d="M21 12 A9 9 0 0 0 12 3"></path></svg></span>
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 20px;">Рисуем вашу кухню…</h3>
+<p style="margin: 0; font-size: 14px; color: #5A5F5A;">{{ genNote }}</p>
+</div>
+</sc-if>
+
+<sc-if value="{{ teaser }}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px;">Ваша кухня готова</h3>
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: {{ accentTint }}; color: {{ accent }}; font-size: 13px; font-weight: 600;">{{ sourceChip }}</span>
+</div>
+<div style="border-radius: 16px; background: #F6F4EF; padding: 12px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
+<svg viewBox="0 0 200 150" style="width: 100%; height: auto; display: block;" fill="none" stroke="#18201C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="136" x2="194" y2="136" stroke-opacity="0.4"></line><rect x="78" y="22" width="44" height="50" rx="2" fill="#FFFFFF"></rect><line x1="100" y1="22" x2="100" y2="72"></line><line x1="78" y1="47" x2="122" y2="47"></line><rect x="10" y="20" width="58" height="40" rx="2" fill="#E3D3BC"></rect><line x1="39" y1="20" x2="39" y2="60"></line><rect x="132" y="20" width="58" height="40" rx="2" fill="#E3D3BC"></rect><line x1="161" y1="20" x2="161" y2="60"></line><rect x="8" y="86" width="184" height="6" rx="1.5" fill="#4A4A46" stroke="none"></rect><path d="M104 86 V77 Q104 73 108 73 H112"></path><rect x="10" y="92" width="180" height="42" rx="2" fill="#E3D3BC"></rect><line x1="55" y1="92" x2="55" y2="134"></line><line x1="100" y1="92" x2="100" y2="134"></line><line x1="145" y1="92" x2="145" y2="134"></line><rect x="18" y="99" width="30" height="28" rx="2"></rect><line x1="68" y1="100" x2="88" y2="100" stroke-width="2.2"></line><line x1="113" y1="100" x2="133" y2="100" stroke-width="2.2"></line><line x1="157" y1="100" x2="177" y2="100" stroke-width="2.2"></line></svg>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">Стандарт</span><span style="font-size: 13px; color: #5A5F5A;">МДФ, акрил</span></div>
+<span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 17px; white-space: nowrap;">[от–до] ₸</span>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+<div style="position: relative; border-radius: 12px; background: #F6F4EF; padding: 8px; box-sizing: border-box; overflow: hidden;">
+<div style="filter: blur(4px);"><svg viewBox="0 0 200 150" style="width: 100%; height: auto; display: block;" fill="none" stroke="#18201C" stroke-width="1.4" aria-hidden="true"><rect x="10" y="20" width="58" height="40" rx="2" fill="#FFFFFF"></rect><rect x="132" y="20" width="58" height="40" rx="2" fill="#FFFFFF"></rect><rect x="8" y="86" width="184" height="6" rx="1.5" fill="#BDB7AC" stroke="none"></rect><rect x="10" y="92" width="180" height="42" rx="2" fill="#FFFFFF"></rect></svg></div>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-weight: 700; font-size: 14px;"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11 V8 C8 5.8 9.8 4 12 4 C14.2 4 16 5.8 16 8 V11"></path></svg>Эконом</div>
+</div>
+<div style="position: relative; border-radius: 12px; background: #F6F4EF; padding: 8px; box-sizing: border-box; overflow: hidden;">
+<div style="filter: blur(4px);"><svg viewBox="0 0 200 150" style="width: 100%; height: auto; display: block;" fill="none" stroke="#18201C" stroke-width="1.4" aria-hidden="true"><rect x="10" y="20" width="58" height="40" rx="2" fill="#2F4A40"></rect><rect x="132" y="20" width="58" height="40" rx="2" fill="#2F4A40"></rect><rect x="8" y="86" width="184" height="6" rx="1.5" fill="#D9D4CA" stroke="none"></rect><rect x="10" y="92" width="180" height="42" rx="2" fill="#2F4A40"></rect></svg></div>
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-weight: 700; font-size: 14px;"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11 V8 C8 5.8 9.8 4 12 4 C14.2 4 16 5.8 16 8 V11"></path></svg><span style="padding: 1px 6px; border-radius: 6px; background: rgba(255, 255, 255, 0.85);">Премиум</span></div>
+</div>
+</div>
+<h3 style="margin: 4px 0 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Откройте эконом и премиум с ценами</h3>
 <div style="display: flex; gap: 8px;">
 <sc-for list="{{ contacts }}" as="opt" hint-placeholder-count="3">
 <button type="button" onClick="{{ opt.pick }}" aria-pressed="{{ opt.pressed }}" style="flex: 1 1 0; min-height: 46px; padding: 0 6px; box-sizing: border-box; border-radius: 12px; border: 2px solid {{ opt.ring }}; background: {{ opt.bg }}; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer;">{{ opt.label }}</button>
@@ -152,22 +204,44 @@ body{margin:0}
 <input id="vm-name" type="text" value="{{ name }}" onChange="{{ onName }}" placeholder="Как к вам обращаться" style="width: 100%; min-height: 50px; padding: 0 14px; box-sizing: border-box; border-radius: 12px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 16px;">
 <label for="vm-phone" style="font-size: 14px; font-weight: 600;">Телефон</label>
 <input id="vm-phone" type="tel" value="{{ phone }}" onChange="{{ onPhone }}" placeholder="+7 (___) ___-__-__" style="width: 100%; min-height: 50px; padding: 0 14px; box-sizing: border-box; border-radius: 12px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 16px;">
-<label for="vm-consent" style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.45; color: #5A5F5A; cursor: pointer;"><input id="vm-consent" type="checkbox" checked="{{ consent }}" onChange="{{ onConsent }}" style="width: 20px; height: 20px; margin: 0; flex: 0 0 20px; accent-color: {{ accent }};">Согласен на обработку фото и контактов только для расчёта. Фото не публикуем.</label>
-<button type="button" onClick="{{ submit }}" style="min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; background: {{ accent }}; color: #FFFFFF; font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px; cursor: pointer;">Получить 3 варианта</button>
+<label for="vm-consent" style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; line-height: 1.45; color: #5A5F5A; cursor: pointer;"><input id="vm-consent" type="checkbox" checked="{{ consent }}" onChange="{{ onConsent }}" style="width: 20px; height: 20px; margin: 0; flex: 0 0 20px; accent-color: {{ accent }};">Согласен на обработку фото и контактов сервисом ИИ-визуализации — только для моего расчёта. Фото не публикуем.</label>
+<button type="button" onClick="{{ unlock }}" style="min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; background: {{ accent }}; color: #FFFFFF; font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px; cursor: pointer;">Открыть 3 варианта</button>
 </div>
 </sc-if>
 
-<sc-if value="{{ canBack }}" hint-placeholder-val="{{ false }}">
-<button type="button" onClick="{{ back }}" style="align-self: flex-start; min-height: 44px; padding: 0 4px; border: 0; background: transparent; color: #5A5F5A; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer;">← Назад</button>
+<sc-if value="{{ full }}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 22px;">Ваша кухня в 3 вариантах</h3>
+<span style="display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: {{ accent }};"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 L10 17.5 L19 7.5"></path></svg>{{ sentText }}</span>
+</div>
+<div style="display: flex; gap: 6px; padding: 4px; border-radius: 12px; background: #F6F4EF;">
+<sc-for list="{{ vtabs }}" as="t" hint-placeholder-count="3">
+<button type="button" onClick="{{ t.pick }}" aria-pressed="{{ t.pressed }}" style="flex: 1 1 0; min-height: 44px; padding: 0 4px; box-sizing: border-box; border-radius: 9px; border: 1.5px solid {{ t.ring }}; background: {{ t.bg }}; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 14px; font-weight: {{ t.weight }}; cursor: pointer;">{{ t.label }}</button>
+</sc-for>
+</div>
+<div style="border-radius: 16px; background: #F6F4EF; padding: 12px; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px;">
+<svg viewBox="0 0 200 150" style="width: 100%; height: auto; display: block;" fill="none" stroke="#18201C" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="136" x2="194" y2="136" stroke-opacity="0.4"></line><rect x="78" y="22" width="44" height="50" rx="2" fill="#FFFFFF"></rect><line x1="100" y1="22" x2="100" y2="72"></line><line x1="78" y1="47" x2="122" y2="47"></line><rect x="10" y="20" width="58" height="40" rx="2" fill="{{ kFront }}"></rect><line x1="39" y1="20" x2="39" y2="60"></line><rect x="132" y="20" width="58" height="40" rx="2" fill="{{ kFront }}"></rect><line x1="161" y1="20" x2="161" y2="60"></line><rect x="8" y="86" width="184" height="6" rx="1.5" fill="{{ kCounter }}" stroke="none"></rect><path d="M104 86 V77 Q104 73 108 73 H112"></path><rect x="10" y="92" width="180" height="42" rx="2" fill="{{ kFront }}"></rect><line x1="55" y1="92" x2="55" y2="134"></line><line x1="100" y1="92" x2="100" y2="134"></line><line x1="145" y1="92" x2="145" y2="134"></line><rect x="18" y="99" width="30" height="28" rx="2"></rect><line x1="68" y1="100" x2="88" y2="100" stroke="{{ kHandle }}" stroke-width="2.2"></line><line x1="113" y1="100" x2="133" y2="100" stroke="{{ kHandle }}" stroke-width="2.2"></line><line x1="157" y1="100" x2="177" y2="100" stroke="{{ kHandle }}" stroke-width="2.2"></line></svg>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+<div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-weight: 700; font-size: 16px;">{{ vName }}</span><span style="font-size: 13px; color: #5A5F5A;">{{ vMat }}</span></div>
+<span style="font-family: Manrope, sans-serif; font-weight: 800; font-size: 17px; white-space: nowrap;">[от–до] ₸</span>
+</div>
+</div>
+<h3 style="margin: 4px 0 0; font-family: Manrope, sans-serif; font-weight: 700; font-size: 18px;">Запишитесь на бесплатный замер</h3>
+<p style="margin: 0; font-size: 14px; color: #5A5F5A;">Цену зафиксируем в договоре</p>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+<sc-for list="{{ slots }}" as="opt" hint-placeholder-count="4">
+<button type="button" onClick="{{ opt.pick }}" aria-pressed="{{ opt.pressed }}" style="min-height: 46px; padding: 0 8px; box-sizing: border-box; border-radius: 12px; border: 2px solid {{ opt.ring }}; background: {{ opt.bg }}; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer;">{{ opt.label }}</button>
+</sc-for>
+</div>
+<sc-if value="{{ notBooked }}" hint-placeholder-val="{{ true }}">
+<button type="button" onClick="{{ book }}" style="width: 100%; min-height: 54px; padding: 0 16px; border: 0; border-radius: 14px; background: {{ accent }}; color: #FFFFFF; font-family: Manrope, sans-serif; font-weight: 700; font-size: 17px; cursor: pointer;">Записаться на замер</button>
 </sc-if>
-
-<sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center;">
-<div style="width: 52px; height: 52px; border-radius: 999px; background: {{ accentTint }}; color: {{ accent }}; display: flex; align-items: center; justify-content: center;"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 L10 17.5 L19 7.5"></path></svg></div>
-<h3 style="margin: 0; font-family: Manrope, sans-serif; font-weight: 800; font-size: 20px;">Готовим вашу кухню в 3 вариантах</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.5;">{{ doneText }}</p>
-<p style="margin: 0; font-size: 13px; color: #5A5F5A;">Это макет: данные никуда не отправляются.</p>
-<button type="button" onClick="{{ reset }}" style="min-height: 44px; padding: 0 18px; border-radius: 12px; border: 1px solid #CFC9BD; background: #FFFFFF; color: #18201C; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; cursor: pointer;">Пройти ещё раз</button>
+<sc-if value="{{ booked }}" hint-placeholder-val="{{ false }}">
+<p style="margin: 0; padding: 12px 14px; border-radius: 12px; background: {{ accentTint }}; font-size: 15px; font-weight: 600;">Записали вас на замер. Менеджер подтвердит время в мессенджере.</p>
+</sc-if>
+<p style="margin: 0; font-size: 12px; line-height: 1.5; color: #5A5F5A;">Это визуализация идеи. Точный проект и цену фиксируем в договоре после замера. В макете данные никуда не отправляются.</p>
+<button type="button" onClick="{{ reset }}" style="align-self: center; min-height: 44px; padding: 0 4px; border: 0; background: transparent; color: #5A5F5A; font-family: 'Golos Text', sans-serif; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer;">Примерить ещё раз</button>
 </div>
 </sc-if>
 </div>
@@ -185,7 +259,15 @@ body{margin:0}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { v: 'std', step: 1, photo: false, shape: null, style: null, when: null, contact: 'wa', name: '', phone: '', consent: true, done: false };
+    this.state = this.initial();
+  }
+
+  initial() {
+    return { v: 'std', step: 1, photo: false, shape: null, length: null, style: null, when: null, gen: false, contact: 'wa', name: '', phone: '', consent: true, unlocked: false, slot: null, booked: false };
+  }
+
+  componentWillUnmount() {
+    if (this.timer) { clearTimeout(this.timer); }
   }
 
   rgb(hex) {
@@ -196,6 +278,12 @@ class Component extends DCLogic {
     return { r: (n >> 16) & 255, g: (n >> 8) & 255, b: n & 255 };
   }
 
+  generate() {
+    var self = this;
+    if (this.timer) { clearTimeout(this.timer); }
+    this.timer = setTimeout(function () { self.setState({ gen: false }); }, 1600);
+  }
+
   choices(list, key, accent, tint) {
     var self = this;
     return list.map(function (o) {
@@ -203,12 +291,33 @@ class Component extends DCLogic {
       return Object.assign({}, o, {
         ring: on ? accent : '#D9D4CA',
         bg: on ? tint : '#FFFFFF',
+        pressed: on,
         pick: function () {
           var patch = {};
           patch[key] = o.id;
-          patch.step = Math.min(self.state.step + 1, 5);
-          self.setState(patch);
+          if (self.state.step === 5) {
+            patch.step = 6;
+            patch.gen = true;
+            self.setState(patch);
+            self.generate();
+          } else {
+            patch.step = Math.min(self.state.step + 1, 5);
+            self.setState(patch);
+          }
         }
+      });
+    });
+  }
+
+  picker(list, key, accent, tint) {
+    var self = this;
+    return list.map(function (o) {
+      var on = self.state[key] === o.id;
+      return Object.assign({}, o, {
+        ring: on ? accent : '#D9D4CA',
+        bg: on ? tint : '#FFFFFF',
+        pressed: on,
+        pick: function () { var p = {}; p[key] = o.id; self.setState(p); }
       });
     });
   }
@@ -219,7 +328,8 @@ class Component extends DCLogic {
     var accent = this.props.accent ?? '#1D6B55';
     var c = this.rgb(accent);
     var tint = 'rgba(' + c.r + ', ' + c.g + ', ' + c.b + ', 0.09)';
-    var inQuiz = !s.done;
+    var inQuiz = s.step <= 5;
+    var result = s.step === 6 && !s.gen;
 
     var palettes = {
       econ: { label: 'Эконом', mat: 'ЛДСП', front: '#FFFFFF', counter: '#BDB7AC', handle: '#18201C' },
@@ -246,6 +356,13 @@ class Component extends DCLogic {
       { id: 'island', label: 'С островом', isIsland: true },
       { id: 'unknown', label: 'Пока не знаю', isUnknown: true }
     ], 'shape', accent, tint);
+    var lengths = this.choices([
+      { id: 'l1', label: 'До 2,5 м' },
+      { id: 'l2', label: '2,5–3,5 м' },
+      { id: 'l3', label: '3,5–5 м' },
+      { id: 'l4', label: 'Больше 5 м' },
+      { id: 'l5', label: 'Не знаю — посчитайте по типовой' }
+    ], 'length', accent, tint);
     var styles = this.choices([
       { id: 'modern', label: 'Современный', c1: '#ECEBE7', c2: '#2B2B2A' },
       { id: 'classic', label: 'Классика', c1: '#F1E9DC', c2: '#8C6B4F' },
@@ -259,23 +376,21 @@ class Component extends DCLogic {
       { id: 'w3', label: 'Ремонт ещё идёт' },
       { id: 'w4', label: 'Ещё не получил ключи' }
     ], 'when', accent, tint);
-    var contacts = [
+    var contacts = this.picker([
       { id: 'wa', label: 'WhatsApp' },
       { id: 'tg', label: 'Telegram' },
       { id: 'call', label: 'Звонок' }
-    ].map(function (o) {
-      var on = s.contact === o.id;
-      return Object.assign({}, o, {
-        ring: on ? accent : '#D9D4CA',
-        bg: on ? tint : '#FFFFFF',
-        pressed: on,
-        pick: function () { self.setState({ contact: o.id }); }
-      });
-    });
+    ], 'contact', accent, tint);
+    var slots = this.picker([
+      { id: 's1', label: '[Завтра, 10:00]' },
+      { id: 's2', label: '[Завтра, 15:00]' },
+      { id: 's3', label: '[Послезавтра, 11:00]' },
+      { id: 's4', label: 'Другое время' }
+    ], 'slot', accent, tint);
 
-    var doneText = s.contact === 'call'
-      ? 'Перезвоним в течение [N] часов и обсудим 3 варианта вашей кухни.'
-      : 'Пришлём картинки и цены в ' + (s.contact === 'tg' ? 'Telegram' : 'WhatsApp') + ' в течение [N] часов: эконом, стандарт и премиум.';
+    var sentText = s.contact === 'call'
+      ? 'Перезвоним, чтобы обсудить варианты'
+      : 'Копию отправили в ' + (s.contact === 'tg' ? 'Telegram' : 'WhatsApp');
 
     return {
       accent: accent,
@@ -287,31 +402,40 @@ class Component extends DCLogic {
       vName: cur.label,
       vMat: cur.mat,
       inQuiz: inQuiz,
-      done: s.done,
-      s1: inQuiz && s.step === 1,
-      s2: inQuiz && s.step === 2,
-      s3: inQuiz && s.step === 3,
-      s4: inQuiz && s.step === 4,
-      s5: inQuiz && s.step === 5,
-      canBack: inQuiz && s.step > 1,
-      stepNum: s.step,
-      progressPct: Math.round((s.step / 5) * 100),
+      s1: s.step === 1,
+      s2: s.step === 2,
+      s3: s.step === 3,
+      s4: s.step === 4,
+      s5: s.step === 5,
+      canBack: s.step >= 2 && s.step <= 5,
+      gen: s.step === 6 && s.gen,
+      teaser: result && !s.unlocked,
+      full: result && s.unlocked,
+      stepNum: Math.min(s.step, 5),
+      progressPct: Math.round((Math.min(s.step, 5) / 5) * 100),
+      genNote: s.photo ? 'Берём ваше фото и подбираем 3 варианта отделки' : 'Рисуем кухню по вашим ответам',
+      sourceChip: s.photo ? 'По вашему фото' : 'Нарисовано по вашим ответам',
+      sentText: sentText,
       shapes: shapes,
+      lengths: lengths,
       styles: styles,
       whens: whens,
       contacts: contacts,
+      slots: slots,
       name: s.name,
       phone: s.phone,
       consent: s.consent,
+      booked: s.booked,
+      notBooked: !s.booked,
       upload: function () { self.setState({ photo: true, step: 2 }); },
       skip: function () { self.setState({ photo: false, step: 2 }); },
       onName: function (e) { self.setState({ name: e.target.value }); },
       onPhone: function (e) { self.setState({ phone: e.target.value }); },
       onConsent: function (e) { self.setState({ consent: e.target.checked }); },
       back: function () { self.setState({ step: Math.max(1, self.state.step - 1) }); },
-      submit: function () { self.setState({ done: true }); },
-      reset: function () { self.setState({ step: 1, photo: false, shape: null, style: null, when: null, contact: 'wa', name: '', phone: '', consent: true, done: false }); },
-      doneText: doneText
+      unlock: function () { self.setState({ unlocked: true, v: 'std' }); },
+      book: function () { self.setState({ booked: true }); },
+      reset: function () { self.setState(self.initial()); }
     };
   }
 }
